@@ -41,3 +41,42 @@ a:hover {
 h1, h2, h3 {
     font: inherit;
 }
+
+.grid {
+    display: grid;
+}
+
+.container {
+    max-width: 1280px;
+    margin-inline: auto;
+    padding-inline: 32px;
+}
+
+
+#primary {
+    padding-block: 20px;
+
+    div {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    div:nth-child(2) {
+        margin: auto;
+    }
+
+    div:nth-child(3) {
+        justify-self: end;
+    }
+}
+
+.grid-flow-col {
+    grid-auto-flow: column;
+}
+
+#secundary {
+    padding-block: 14px;
+    border: solid 1px var(--stroke-color);
+    border-inline: none;
+}
